@@ -10,7 +10,6 @@ package com.ryancanulla.airforandroid.controller
     import flash.sensors.Accelerometer;
     import flash.utils.Timer;
 
-    import mx.collections.ArrayCollection;
 
     public class MainViewController
     {

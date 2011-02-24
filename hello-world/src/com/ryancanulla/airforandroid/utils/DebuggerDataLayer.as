@@ -10,8 +10,6 @@ package com.ryancanulla.airforandroid.utils
     import flash.text.TextField;
     import flash.text.TextFormat;
 
-    import spark.components.TextInput;
-
     public class DebuggerDataLayer extends Sprite
     {
 

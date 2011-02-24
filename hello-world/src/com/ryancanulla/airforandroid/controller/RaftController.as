@@ -45,7 +45,7 @@ package com.ryancanulla.airforandroid.controller
 
                 if (raft.hitTestObject(swimmer)) {
                     _view.removeChild(swimmer);
-                    model.swimmersClan.removeItemAt(i);
+                    model.swimmersClan.splice(i, 1);
                 }
             }
 

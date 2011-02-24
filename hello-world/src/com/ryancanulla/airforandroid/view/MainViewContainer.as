@@ -9,8 +9,6 @@ package com.ryancanulla.airforandroid.view
     import flash.text.TextField;
     import flash.text.TextFormat;
 
-    import mx.collections.ArrayCollection;
-
     public class MainViewContainer extends Sprite
     {
         private var controller:MainViewController;

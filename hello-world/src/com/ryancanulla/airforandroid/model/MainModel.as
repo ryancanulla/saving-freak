@@ -5,7 +5,6 @@ package com.ryancanulla.airforandroid.model
     import flash.events.IEventDispatcher;
     import flash.utils.Timer;
 
-    import mx.collections.ArrayCollection;
 
     public class MainModel extends EventDispatcher
     {
@@ -13,7 +12,7 @@ package com.ryancanulla.airforandroid.model
         private var _round:Number;
         private var _time:Number;
         private var _stage:Stage;
-        private var _swimmersClan:ArrayCollection;
+        private var _swimmersClan:Array;
         private var _timeLeft:Number;
         private var _level:Number;
         private static var _instance:MainModel;
@@ -33,7 +32,7 @@ package com.ryancanulla.airforandroid.model
         private function init():void {
             _totalSwimmers = 5;
             _round = 1;
-            _swimmersClan = new ArrayCollection();
+            _swimmersClan = new Array();
             //_time = new Timer();
         }
 
@@ -53,11 +52,11 @@ package com.ryancanulla.airforandroid.model
             _stage = value;
         }
 
-        public function get swimmersClan():ArrayCollection {
+        public function get swimmersClan():Array {
             return _swimmersClan;
         }
 
-        public function set swimmersClan(value:ArrayCollection):void {
+        public function set swimmersClan(value:Array):void {
             _swimmersClan = value;
         }
 

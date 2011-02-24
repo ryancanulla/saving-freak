@@ -7,8 +7,6 @@ package com.ryancanulla.airforandroid.controller
     import flash.display.Stage;
     import flash.events.Event;
 
-    import mx.collections.ArrayCollection;
-
     public class SwimmerController extends Sprite
     {
         private var swimmer:Swimmer;
@@ -31,7 +29,7 @@ package com.ryancanulla.airforandroid.controller
                 swimmer.x = 400 * Math.random();
                 swimmer.y = 800 * Math.random();
                 _view.addChild(swimmer);
-                model.swimmersClan.addItem(swimmer);
+                model.swimmersClan.push(swimmer);
             }
 
         }
